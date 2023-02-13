@@ -11,3 +11,10 @@
         name: apache2
         state: started
         enabled: yes
+- name: test httpd accessibility
+  become: false
+  hosts: 192.168.50.103
+  tasks:
+    - name: test httpd access
+      uri:
+        url: http://192.168.50.103
