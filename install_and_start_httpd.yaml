@@ -1,6 +1,6 @@
 ---
 - name: install start and enable httpd
-  hosts: all
+  hosts: 192.168.50.103
   tasks:
     - name: install package
       package:
