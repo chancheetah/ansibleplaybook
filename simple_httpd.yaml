@@ -7,12 +7,6 @@
       yum:
         name: httpd
         state: present
-    - name: Copying the file
-      copy:
-        src: /home/ec2-user/files/httpd.conf
-        dest: /var/www/html/index.html
-        mode: 0644
-        backup: yes
     - name: Starting the service
       service:
         name: httpd
