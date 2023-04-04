@@ -1,6 +1,6 @@
 ---
 - name: Installing httpd
-  hosts: hosts
+  hosts: locahost
   become: true
   tasks:
     - name: Installing httpd
